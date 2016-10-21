@@ -6,7 +6,16 @@ large sample size a better fit than an inflexible approach would be obtained
 (c) better - with more degrees of freedom, a flexible model would obtain a
 better fit
 
-(d) worse - flexible methods fit to the noise in the error terms and increase variance
+(d) worse - flexible methods fit to the noise in the error terms and increase variance 
+
+Edit - This is wrong. Statistical methods can't fit the noise since the input of the algorithm
+is the set of predictors (training data) never feed the noise. For example it's mentioned
+in the book that even our estimated function is exactly the same as the one that we were trying
+to predict there would still be some error due to noise. Noise is something that is inherent to the
+observations and something that we can't remove.
+That said I'm not exactly sure about the answer to this question. I think my best guess would be
+that since the variance of the error term is already very high, we should pick a learning
+method with low variance.
 
 
 2. (a) regression. inference. quantitative output of CEO salary based on CEO
